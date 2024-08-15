@@ -133,6 +133,9 @@ end
 
 
 # Common use
+alias vim nvim
+alias n nvim
+alias bim nvim
 alias .. 'cd ..'
 alias ... 'cd ../..'
 alias .... 'cd ../../..'
@@ -162,14 +165,6 @@ alias mirror 'sudo reflector -f 30 -l 30 --number 10 --verbose --save /etc/pacma
 alias mirrora 'sudo reflector --latest 50 --number 20 --sort age --save /etc/pacman.d/mirrorlist'
 alias mirrord 'sudo reflector --latest 50 --number 20 --sort delay --save /etc/pacman.d/mirrorlist'
 alias mirrors 'sudo reflector --latest 50 --number 20 --sort score --save /etc/pacman.d/mirrorlist'
-
-# Help people new to Arch
-alias apt 'man pacman'
-alias apt-get 'man pacman'
-alias please 'sudo'
-alias tb 'nc termbin.com 9999'
-alias helpme 'echo "To print basic information about a command use tldr <command>"'
-alias pacdiff 'sudo -H DIFFPROG=meld pacdiff'
 
 # Get the error messages from journalctl
 alias jctl 'journalctl -p 3 -xb'
